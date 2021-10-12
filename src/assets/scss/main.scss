@@ -177,8 +177,47 @@ li{
 }
 @media screen and (min-width: 1200px){
     .main{
-        max-width: 40%;
+        max-width: 50%;
         margin: 0 auto;
+        .user-profile{
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 2rem;
+            .left-aside{
+                display: block;
+                .avatar{
+                    width: 100px;
+                }
+            }
+            .right-aside{
+                .about-me{
+                    display: flex;
+                    .left{
+                        display: none;
+                    }
+                    .right{
+                        .title{
+                            display: flex;
+                            justify-content: space-between;
+                            .sub-info{
+                                margin-top: 5px;
+                            }
+                            .joined{
+                                align-self: flex-start;   
+                                display: block;   
+                                margin-left: 100px;                          
+                            }
+                        }
+                    }
+                }
+                .contact-info{
+                    ul{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                    }
+                }
+            }
+        }
     }
 }
 

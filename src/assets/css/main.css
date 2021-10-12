@@ -245,8 +245,52 @@ li {
 
 @media screen and (min-width: 1200px) {
   .main {
-    max-width: 40%;
+    max-width: 50%;
     margin: 0 auto;
+  }
+  .main .user-profile {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100px 1fr;
+        grid-template-columns: 100px 1fr;
+    gap: 2rem;
+  }
+  .main .user-profile .left-aside {
+    display: block;
+  }
+  .main .user-profile .left-aside .avatar {
+    width: 100px;
+  }
+  .main .user-profile .right-aside .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .user-profile .right-aside .about-me .left {
+    display: none;
+  }
+  .main .user-profile .right-aside .about-me .right .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main .user-profile .right-aside .about-me .right .title .sub-info {
+    margin-top: 5px;
+  }
+  .main .user-profile .right-aside .about-me .right .title .joined {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    display: block;
+    margin-left: 100px;
+  }
+  .main .user-profile .right-aside .contact-info ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 

@@ -7,10 +7,10 @@ import COMPANY_ICON from "../assets/images/icon-company.svg"
 const UserDetails = () => {
     return (
         <div className="user-profile">
-        <aside className="left-aside">
-            <img className="avatar" src={AVATAR} alt="avatar" />
-        </aside>
-        <aside className="right-aside">
+            <aside className="left-aside">
+                <img className="avatar" src={AVATAR} alt="avatar" />
+            </aside>
+         <aside className="right-aside">
             <article className="about-me">
                 <div className="left">
                     <img className="avatar" src={AVATAR} alt="avatar" />
