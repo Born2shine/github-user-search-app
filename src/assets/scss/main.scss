@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import 'variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Mono', monospace;
+    background: $clr-light-primary;
+}
+
+// General Styles
+
+h1{
+    font-weight: bold;
+}
+h3{
+    font-weight: 400;
+    font-size: 16px;
+}
+h4{
+    font-size: 13px;
+    font-weight: 400;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.main{
+    padding: 20px;
+    header{
+        display: flex;
+        justify-content: space-between;
+        .title{
+            color: $clr-dark-1;
+            font-size: 25px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            .color-title, .toggle-theme{
+                color: $clr-primary-2;
+            }
+            .color-title{
+                letter-spacing: 2px;
+            }
+            .toggle-theme{
+                margin-left: 20px;
+                align-self: center;
+                cursor: pointer;
+    
+            }
+        }
+    }
+    .search-user{
+        margin: 30px 0;
+        .search-input{
+            background: $clr-white;
+            box-shadow: 2px 5px 10px rgba(0,0,0,0.1);
+            padding: 14px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            .search-icon{
+                align-self: center;
+            }
+            input{
+                border: none;
+                font-family: inherit;
+                padding: 5px;
+                min-width: 60%;
+                &:focus{
+                    outline: none;
+                }
+                &::placeholder{
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    color: $clr-primary-2;
+                }
+            }
+            .btn{
+                background: $clr-primary;
+                color: $clr-white;
+                border: none;
+                border-radius: 8px;
+                padding: 10px 16px;
+            }
+        }
+    }
+    .user-profile{
+        background: $clr-white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 2px 5px 10px rgba(0,0,0,0.1);
+        .left-aside{
+            display: none;
+        }
+        .right-aside{
+            .about-me{
+                display: grid;
+                grid-template-columns: 100px 1fr;
+                .title{
+                    margin-left: -5px;
+                    .sub-info{
+                        line-height: 1.3;
+                        .name{
+                            color: $clr-primary-3;
+                        }
+                        .username{
+                            color: $clr-primary;
+                        }
+                    }
+                    .joined{
+                        color: $clr-primary-1;
+                        line-height: 3;
+                    }
+                }
+            }
+            .some-text{
+                margin: 25px 0;
+                color: $clr-primary-2;
+            }
+            .attributes{
+                margin: 20px 0;
+                background: $clr-light-primary;
+                padding: 20px;
+                border-radius: 15px;
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    li{
+                        .title{
+                            color: $clr-primary-2;
+                            font-size: 15px;
+                        }
+                        .total{
+                            color: $clr-primary-3;
+                            font-size: 17px;
+                            line-height: 2;
+                        }
+                    }
+                }
+            }
+            .contact-info{
+                margin: 10px 0;
+                ul{
+                    li{
+                        .contact-logo{
+                            padding: 10px 0;
+                            display: flex;
+                            .info{
+                                display: inline-block;
+                                align-self: flex-start;
+                                margin-left: 10px;
+                                color: $clr-primary-2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Media Queries
+@media screen and (min-width: 768px){
+    .main{
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1200px){
+    .main{
+        max-width: 40%;
+        margin: 0 auto;
+    }
+}
+
+
+// Dark mode styles
+
+.dark{
+    background: $clr-midnight;
+    header{
+        .title{
+            color: $clr-light;
+        }
+        nav{
+            .color-title{
+                color: $clr-light;
+            }
+        }
+    }
+    .search-user{
+        .search-input{
+            background: $clr-dark;
+            input{
+                background: $clr-dark;
+                color: $clr-light
+            }
+        }
+    }
+    .user-profile{
+        background: $clr-dark;
+        .right-aside{
+            .about-me{
+                .right{
+                    .title{
+                        .sub-info{
+                            .name{
+                                color: $clr-light
+                            }
+                        }
+                        .joined{
+                            color: $clr-light;
+                        }
+                    }
+                }
+            }
+            .some-text{
+                color: $clr-light;
+            }
+            .attributes{
+                background: $clr-midnight;
+                ul{
+                    li{
+                        .title,.total{
+                            color: $clr-light
+                        };
+                    }
+                }
+            }
+            .contact-info{
+                ul{
+                    li{
+                        .contact-logo{
+                            .info{
+                                color: $clr-light;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
