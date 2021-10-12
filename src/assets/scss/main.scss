@@ -179,6 +179,13 @@ li{
     .main{
         max-width: 50%;
         margin: 0 auto;
+        .search-user{
+            .search-input{
+               .search-icon{
+                   padding-left: 20px;
+               }
+            }
+        }
         .user-profile{
             display: grid;
             grid-template-columns: 100px 1fr;

@@ -248,6 +248,9 @@ li {
     max-width: 50%;
     margin: 0 auto;
   }
+  .main .search-user .search-input .search-icon {
+    padding-left: 20px;
+  }
   .main .user-profile {
     display: -ms-grid;
     display: grid;
