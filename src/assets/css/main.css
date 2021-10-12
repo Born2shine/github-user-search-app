@@ -163,6 +163,11 @@ li {
       grid-template-columns: 100px 1fr;
 }
 
+.main .user-profile .right-aside .about-me .left .avatar {
+  width: 80%;
+  border-radius: 50%;
+}
+
 .main .user-profile .right-aside .about-me .title {
   margin-left: -5px;
 }
@@ -263,6 +268,7 @@ li {
   }
   .main .user-profile .left-aside .avatar {
     width: 100px;
+    border-radius: 50%;
   }
   .main .user-profile .right-aside .about-me {
     display: -webkit-box;

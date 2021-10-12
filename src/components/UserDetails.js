@@ -1,4 +1,4 @@
-import AVATAR from "../assets/images/user-avatar.svg"
+import AVATAR from "../assets/images/avatar.png"
 import LOCATION_ICON from "../assets/images/icon-location.svg"
 import WEBSITE_ICON from "../assets/images/icon-website.svg"
 import TWITTER_ICON from "../assets/images/icon-twitter.svg"

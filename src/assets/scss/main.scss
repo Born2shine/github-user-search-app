@@ -105,6 +105,12 @@ li{
             .about-me{
                 display: grid;
                 grid-template-columns: 100px 1fr;
+                .left{
+                    .avatar{
+                        width: 80%;
+                        border-radius: 50%;
+                    }
+                }
                 .title{
                     margin-left: -5px;
                     .sub-info{
@@ -194,6 +200,7 @@ li{
                 display: block;
                 .avatar{
                     width: 100px;
+                    border-radius: 50%;
                 }
             }
             .right-aside{
