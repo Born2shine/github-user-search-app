@@ -142,6 +142,29 @@ li {
   border: none;
   border-radius: 8px;
   padding: 10px 16px;
+  cursor: pointer;
+}
+
+.main .search-user .search-input .btn:focus {
+  outline: none;
+}
+
+.main .placeholder {
+  text-align: center;
+  color: #697c9a;
+  background: #fefefe;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 50vh;
+}
+
+.main .placeholder .icon {
+  font-size: 50px;
+}
+
+.main .placeholder .error {
+  margin-top: 40px;
+  color: lightcoral;
 }
 
 .main .user-profile {
@@ -178,6 +201,7 @@ li {
 
 .main .user-profile .right-aside .about-me .title .sub-info .name {
   color: #2b3442;
+  font-size: 14px;
 }
 
 .main .user-profile .right-aside .about-me .title .sub-info .username {
@@ -305,6 +329,7 @@ li {
 
 .dark {
   background: #141d2f;
+  min-height: 100vh;
 }
 
 .dark header .title {
@@ -322,6 +347,10 @@ li {
 .dark .search-user .search-input input {
   background: #1e2a47;
   color: #fefefe;
+}
+
+.dark .placeholder {
+  background: #1e2a47;
 }
 
 .dark .user-profile {
